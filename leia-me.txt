@@ -1,3 +1,9 @@
 npm i node-notifier
 
 jest my-test --notify
+
+//? para testar um arquivo
+jest nomedoarquivo
+
+//? também faz o teste mais sem os log
+npm test nomedoarquivo
