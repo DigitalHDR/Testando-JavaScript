@@ -7,3 +7,6 @@ jest nomedoarquivo
 
 //? também faz o teste mais sem os log
 npm test nomedoarquivo
+
+//? parece atualizar um tal de snapshot
+npm test -- -u
