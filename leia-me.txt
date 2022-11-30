@@ -10,3 +10,24 @@ npm test nomedoarquivo
 
 //? parece atualizar um tal de snapshot
 npm test -- -u
+
+//? Jest Platform | plataforma jest
+npm install --save jest-changed-files
+
+//? jest-diff
+npm install jest-diff
+
+//?
+node jest-docblock
+
+//? jest-get-type
+npm i jest-get-type
+
+//? jest-validate
+// npm i jest-validate
+
+//? jest-worker
+// npm i jest-worker
+
+//? pretty-format
+// npm i pretty-format
