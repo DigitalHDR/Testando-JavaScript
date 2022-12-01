@@ -1,0 +1,63 @@
+https://github.com/facebook/jest/tree/master/examples/snapshot
+
+NESTA AULA O ARQUIVO QUE FICAMOS ALTERANDO É 'link.test.js.snap'
+
+
+AULA 9. TESTE COM snapshots (EM SEÇÃO 3:JEST GUIAS)
+
+
+//? Snapshot Testing
+
+quando vc roda o 1° teste vai pegar o componente vai tirar uma foto dele
+e vai armazenar, nas proximas vezes que vc roda o mesmo teste ele vai comparar
+a 2° foto com a 1° foto, se tiver alguma divergência(algo diferente) ele 
+vai elertar vc.(essas foto(arquivos) fica na pasta '__snapshots__')
+
+//=================================================================
+//? Updating Snapshots | Atualizando Snapshots
+
+Também temos a opção de atualizar o snapshots, no caso o jest vai alertar
+que tem algo diferente, e vamos ver se é um erro ou não
+
+1° caso vc queira atualizar algo no Snapshots, vai vai altera o que queira
+
+2° depois vc digita no terminal
+jest --updateSnapshot
+tem esse código de baixo que mostrou na aula mais não funcionou(mais esta ai qualquer coisa) 
+npm test --  --updateSnapshot
+
+3° o jest vai atualizar o Snapshots, assim da proxima vez que rodar o teste vai passar.
+com a nova alteração
+
+//=================================================================
+--testNamePattern
+
+podemos atualizar apena um Snapshots, para isso devemos mudar apanas o escopo(bloco)
+que nos queremos que ele atualize
+no caso tive que usar o codigo de baixo, 
+
+npm test -- --updateSnapshot --testNamePatter=correctly
+
+//=================================================================
+//? Interactive Snapshot Mode | Modo Instantâneo Interativo
+para modo watch(que fica assistindo em tempo real)
+
+na aula tive que digitar assim 
+npm test -- --watch
+
+//=================================================================
+Inline Snapshots | Instantâneos embutidos
+
+o jest cria o corpo do Snapshot que estiver com '.toMatchInlineSnapshot()'
+dentro do parametro(texto) desse '.toMatchInlineSnapshot()'
+npm test
+para rodar o jest, veja que o Snapshot, fica agora dentro do .toMatchInlineSnapshot()
+como parametro(texto)
+
+agora o jest vai falar que ficou um obsoleto(o que esta dentro da pasta Snapshot)
+é so atualizar
+npm test -- -u
+que o erro sai
+
+
+8:30
