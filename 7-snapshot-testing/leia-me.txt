@@ -59,5 +59,8 @@ agora o jest vai falar que ficou um obsoleto(o que esta dentro da pasta Snapshot
 npm test -- -u
 que o erro sai
 
+//=================================================================
 
-8:30
+//? Property Matchers
+as vezes estamos trabalhando com data ou algum numero random, entao cada vez 
+que vc rodar ele vai mudar esse valor
